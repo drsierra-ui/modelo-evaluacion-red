@@ -65,7 +65,7 @@
           <!-- Título del modelo de evaluación -->
           <h3 class="h3">Título del modelo de evaluación</h3>
           <div class="callout">
-            <b>Modelo Integrado de Evaluación de Recursos Educativos Digitales (MIERED)</b><br />
+            <b>Modelo Integrado de Evaluación de Recursos Educativos Digitales</b><br />
             Evaluación pedagógica, técnica y de uso con propósito formativo y de rediseño.
           </div>
 
@@ -186,20 +186,141 @@
           </ol>
 
           <!-- Instrumento -->
-          <h3 class="h3">Instrumento</h3>
-          <p>
-            El instrumento del modelo rediseñado integra una <b>rúbrica unificada</b> (criterios + escala),
-            una <b>matriz de evidencias</b> y un <b>plan de mejora</b> para orientar decisiones pedagógicas.
+          <h3 class="h3">Rúbrica analítica MIERED (escala 1–5)</h3>
+          <p class="small" style="margin-top:-6px">
+          Seleccione el nivel alcanzado en cada criterio y registre evidencias.
           </p>
-          <div class="callout">
-            <b>Componentes del instrumento:</b>
-            <ul style="margin:8px 0 0;padding-left:18px">
-              <li>Rúbrica (criterios consolidados + escala 1–5).</li>
-              <li>Matriz de rediseño: Hallazgo → Evidencia → Impacto → Solución → Prioridad.</li>
-              <li>Checklist de accesibilidad (PDF etiquetado, contraste, subtítulos/transcripción, etc.).</li>
-              <li>Ficha de metadatos (autoría, licencia, nivel, área, palabras clave, versión, formato).</li>
-            </ul>
+          
+          <form>
+          
+          <div style="overflow-x:auto">
+          <table class="table">
+            <tr>
+              <th style="min-width:200px">Criterio</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th style="min-width:250px">Evidencias / Observaciones</th>
+            </tr>
+          
+            <!-- Calidad del contenido -->
+            <tr>
+              <td><b>Calidad del contenido</b><br><span class="small">Rigor, claridad y pertinencia.</span></td>
+              <td><input type="radio" name="contenido" value="1"></td>
+              <td><input type="radio" name="contenido" value="2"></td>
+              <td><input type="radio" name="contenido" value="3"></td>
+              <td><input type="radio" name="contenido" value="4"></td>
+              <td><input type="radio" name="contenido" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Alineación -->
+            <tr>
+              <td><b>Alineación con objetivos</b><br><span class="small">Coherencia objetivos–actividades–evaluación.</span></td>
+              <td><input type="radio" name="alineacion" value="1"></td>
+              <td><input type="radio" name="alineacion" value="2"></td>
+              <td><input type="radio" name="alineacion" value="3"></td>
+              <td><input type="radio" name="alineacion" value="4"></td>
+              <td><input type="radio" name="alineacion" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Feedback -->
+            <tr>
+              <td><b>Feedback e interactividad</b><br><span class="small">Retroalimentación formativa y participación.</span></td>
+              <td><input type="radio" name="feedback" value="1"></td>
+              <td><input type="radio" name="feedback" value="2"></td>
+              <td><input type="radio" name="feedback" value="3"></td>
+              <td><input type="radio" name="feedback" value="4"></td>
+              <td><input type="radio" name="feedback" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Motivación -->
+            <tr>
+              <td><b>Motivación</b><br><span class="small">Interés y conexión contextual.</span></td>
+              <td><input type="radio" name="motivacion" value="1"></td>
+              <td><input type="radio" name="motivacion" value="2"></td>
+              <td><input type="radio" name="motivacion" value="3"></td>
+              <td><input type="radio" name="motivacion" value="4"></td>
+              <td><input type="radio" name="motivacion" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Diseño -->
+            <tr>
+              <td><b>Diseño y presentación</b><br><span class="small">Organización visual y calidad multimedia.</span></td>
+              <td><input type="radio" name="diseno" value="1"></td>
+              <td><input type="radio" name="diseno" value="2"></td>
+              <td><input type="radio" name="diseno" value="3"></td>
+              <td><input type="radio" name="diseno" value="4"></td>
+              <td><input type="radio" name="diseno" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Usabilidad -->
+            <tr>
+              <td><b>Usabilidad</b><br><span class="small">Facilidad de navegación e instrucciones.</span></td>
+              <td><input type="radio" name="usabilidad" value="1"></td>
+              <td><input type="radio" name="usabilidad" value="2"></td>
+              <td><input type="radio" name="usabilidad" value="3"></td>
+              <td><input type="radio" name="usabilidad" value="4"></td>
+              <td><input type="radio" name="usabilidad" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Accesibilidad -->
+            <tr>
+              <td><b>Accesibilidad</b><br><span class="small">Subtítulos, contraste, estructura.</span></td>
+              <td><input type="radio" name="accesibilidad" value="1"></td>
+              <td><input type="radio" name="accesibilidad" value="2"></td>
+              <td><input type="radio" name="accesibilidad" value="3"></td>
+              <td><input type="radio" name="accesibilidad" value="4"></td>
+              <td><input type="radio" name="accesibilidad" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Reusabilidad -->
+            <tr>
+              <td><b>Reusabilidad e interoperabilidad</b></td>
+              <td><input type="radio" name="reusabilidad" value="1"></td>
+              <td><input type="radio" name="reusabilidad" value="2"></td>
+              <td><input type="radio" name="reusabilidad" value="3"></td>
+              <td><input type="radio" name="reusabilidad" value="4"></td>
+              <td><input type="radio" name="reusabilidad" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+            <!-- Estándares -->
+            <tr>
+              <td><b>Estándares y metadatos</b></td>
+              <td><input type="radio" name="estandares" value="1"></td>
+              <td><input type="radio" name="estandares" value="2"></td>
+              <td><input type="radio" name="estandares" value="3"></td>
+              <td><input type="radio" name="estandares" value="4"></td>
+              <td><input type="radio" name="estandares" value="5"></td>
+              <td><textarea rows="2" style="width:100%"></textarea></td>
+            </tr>
+          
+          </table>
           </div>
+          
+          <br>
+          
+          <label><b>Promedio final:</b></label>
+          <input type="text" style="width:80px">
+          
+          </form>
+          
+          <div class="callout">
+          <b>Interpretación:</b><br>
+          1–2 → Prioridad alta de rediseño<br>
+          3 → Mejora focalizada<br>
+          4–5 → Recurso adecuado / optimizable
+          </div>
+
 
           <!-- Referencias bibliográficas -->
           <h3 class="h3">Referencias bibliográficas</h3>
