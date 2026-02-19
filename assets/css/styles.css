@@ -271,3 +271,8 @@ background:rgba(2,6,23,.05);
 padding:2px 6px;
 border-radius:8px
 }
+/* Centrar enlaces en columnas de RED (2 y 3) */
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  text-align: center;
+}
