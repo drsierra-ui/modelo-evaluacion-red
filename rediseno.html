@@ -5,7 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rediseño | UDES</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- ✅ Corrección: encabezados y columnas centradas (según anexos) -->
+  <style>
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    /* Centrar encabezados y contenido de TODAS las columnas */
+    .table th,
+    .table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
 </head>
+
 <body>
 
   <header class="topbar">
@@ -73,24 +89,22 @@
           </div>
 
           <!-- Referentes -->
-         <h3 class="h3">Referentes (modelos utilizados como referentes)</h3>
+          <h3 class="h3">Referentes (modelos utilizados como referentes)</h3>
           <ul>
             <li>
               <b>COdA</b> — Instrumento para valorar criterios de calidad en recursos/objetos de aprendizaje.
               <a href="assets/docs/Modelo_CODA2.pdf" target="_blank" rel="noopener noreferrer">Plantilla</a>
             </li>
-          
             <li>
               <b>LORI</b> — Learning Object Review Instrument (valoración de objetos de aprendizaje).
               <a href="assets/docs/Modelo_LORI2.pdf" target="_blank" rel="noopener noreferrer">Plantilla</a>
             </li>
-          
             <li>
               <b>GALVIS</b> — Criterios para evaluación de recursos educativos digitales (como apoyo complementario).
               <a href="assets/docs/Modelo_GALVIS2.pdf" target="_blank" rel="noopener noreferrer">Plantilla</a>
             </li>
           </ul>
-         
+
           <!-- Problemática -->
           <h3 class="h3">Problemática que motiva el rediseño del modelo</h3>
           <p>
@@ -105,62 +119,70 @@
           <p>
             El modelo rediseñado consolida criterios comparables entre instrumentos para facilitar la triangulación y el plan de mejora.
           </p>
+
           <table class="table table-fixed">
             <colgroup>
               <col class="col-crit">
               <col class="col-red">
               <col class="col-red">
             </colgroup>
-            <tr>
-              <th>Criterio consolidado</th>
-              <th>Descripción</th>
-              <th>Referente</th>
-            </tr>
-            <tr>
-              <td>Calidad del contenido</td>
-              <td>Exactitud, claridad, pertinencia y profundidad del contenido.</td>
-              <td>COdA / LORI</td>
-            </tr>
-            <tr>
-              <td>Alineación con objetivos</td>
-              <td>Coherencia objetivos–actividades–evaluación y evidencias de aprendizaje.</td>
-              <td>COdA / LORI</td>
-            </tr>
-            <tr>
-              <td>Feedback, interactividad y adaptabilidad</td>
-              <td>Retroalimentación formativa, interacción y ajuste a necesidades del estudiante.</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Motivación</td>
-              <td>Interés, engagement y relevancia para la población objetivo.</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Diseño y presentación</td>
-              <td>Legibilidad, organización, consistencia visual y soporte multimedia.</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Usabilidad</td>
-              <td>Navegación, control, facilidad de uso y claridad de instrucciones.</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Accesibilidad</td>
-              <td>Pautas de accesibilidad (PDF etiquetado, contraste, subtítulos/transcripción, etc.).</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Reusabilidad e interoperabilidad</td>
-              <td>Adaptación a otros contextos, integración LMS, reutilización con mediación docente.</td>
-              <td>COdA / GALVIS</td>
-            </tr>
-            <tr>
-              <td>Estándares y metadatos</td>
-              <td>Ficha descriptiva (autoría, licencia, versión, palabras clave) y estandarización.</td>
-              <td>COdA / LORI / GALVIS</td>
-            </tr>
+
+            <!-- ✅ Corrección: thead/tbody -->
+            <thead>
+              <tr>
+                <th>Criterio consolidado</th>
+                <th>Descripción</th>
+                <th>Referente</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Calidad del contenido</td>
+                <td>Exactitud, claridad, pertinencia y profundidad del contenido.</td>
+                <td>COdA / LORI</td>
+              </tr>
+              <tr>
+                <td>Alineación con objetivos</td>
+                <td>Coherencia objetivos–actividades–evaluación y evidencias de aprendizaje.</td>
+                <td>COdA / LORI</td>
+              </tr>
+              <tr>
+                <td>Feedback, interactividad y adaptabilidad</td>
+                <td>Retroalimentación formativa, interacción y ajuste a necesidades del estudiante.</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Motivación</td>
+                <td>Interés, engagement y relevancia para la población objetivo.</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Diseño y presentación</td>
+                <td>Legibilidad, organización, consistencia visual y soporte multimedia.</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Usabilidad</td>
+                <td>Navegación, control, facilidad de uso y claridad de instrucciones.</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Accesibilidad</td>
+                <td>Pautas de accesibilidad (PDF etiquetado, contraste, subtítulos/transcripción, etc.).</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Reusabilidad e interoperabilidad</td>
+                <td>Adaptación a otros contextos, integración LMS, reutilización con mediación docente.</td>
+                <td>COdA / GALVIS</td>
+              </tr>
+              <tr>
+                <td>Estándares y metadatos</td>
+                <td>Ficha descriptiva (autoría, licencia, versión, palabras clave) y estandarización.</td>
+                <td>COdA / LORI / GALVIS</td>
+              </tr>
+            </tbody>
           </table>
 
           <!-- Métrica / escala -->
@@ -168,13 +190,23 @@
           <p>
             Se adopta una escala ordinal <b>1–5</b> para valorar todos los criterios de manera homogénea.
           </p>
+
+          <!-- ✅ Corrección: thead/tbody -->
           <table class="table">
-            <tr><th>Valor</th><th>Interpretación</th><th>Guía de uso</th></tr>
-            <tr><td><b>1</b></td><td>Muy bajo / insuficiente</td><td>No cumple; requiere rediseño inmediato.</td></tr>
-            <tr><td><b>2</b></td><td>Bajo</td><td>Cumple parcialmente; mejoras prioritarias.</td></tr>
-            <tr><td><b>3</b></td><td>Medio / aceptable</td><td>Cumple lo básico; ajustes recomendados.</td></tr>
-            <tr><td><b>4</b></td><td>Alto</td><td>Cumple adecuadamente; mejoras menores.</td></tr>
-            <tr><td><b>5</b></td><td>Muy alto / excelente</td><td>Cumple plenamente; referencia de calidad.</td></tr>
+            <thead>
+              <tr>
+                <th>Valor</th>
+                <th>Interpretación</th>
+                <th>Guía de uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>1</b></td><td>Muy bajo / insuficiente</td><td>No cumple; requiere rediseño inmediato.</td></tr>
+              <tr><td><b>2</b></td><td>Bajo</td><td>Cumple parcialmente; mejoras prioritarias.</td></tr>
+              <tr><td><b>3</b></td><td>Medio / aceptable</td><td>Cumple lo básico; ajustes recomendados.</td></tr>
+              <tr><td><b>4</b></td><td>Alto</td><td>Cumple adecuadamente; mejoras menores.</td></tr>
+              <tr><td><b>5</b></td><td>Muy alto / excelente</td><td>Cumple plenamente; referencia de calidad.</td></tr>
+            </tbody>
           </table>
 
           <!-- Metodología -->
@@ -207,228 +239,228 @@
 
           <!-- Instrumento -->
           <h3 class="h3">Rúbrica analítica MIERED (escala 1–5)</h3>
-          <p class="small" style="margin-top:-6px">
-          Seleccione el nivel alcanzado en cada criterio y registre evidencias.
-          </p>
-          
+          <p class="small" style="margin-top:-6px">Seleccione el nivel alcanzado en cada criterio y registre evidencias.</p>
+
           <form>
-          
-          <div style="overflow-x:auto">
-          <table class="table">
-            <tr>
-              <th style="min-width:200px">Criterio</th>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
-              <th>5</th>
-              <th style="min-width:250px">Evidencias / Observaciones</th>
-            </tr>
-          
-            <!-- Calidad del contenido -->
-            <tr>
-              <td><b>Calidad del contenido</b><br><span class="small">Rigor, claridad y pertinencia.</span></td>
-              <td><input type="radio" name="contenido" value="1"></td>
-              <td><input type="radio" name="contenido" value="2"></td>
-              <td><input type="radio" name="contenido" value="3"></td>
-              <td><input type="radio" name="contenido" value="4"></td>
-              <td><input type="radio" name="contenido" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Alineación -->
-            <tr>
-              <td><b>Alineación con objetivos</b><br><span class="small">Coherencia objetivos–actividades–evaluación.</span></td>
-              <td><input type="radio" name="alineacion" value="1"></td>
-              <td><input type="radio" name="alineacion" value="2"></td>
-              <td><input type="radio" name="alineacion" value="3"></td>
-              <td><input type="radio" name="alineacion" value="4"></td>
-              <td><input type="radio" name="alineacion" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Feedback -->
-            <tr>
-              <td><b>Feedback e interactividad</b><br><span class="small">Retroalimentación formativa y participación.</span></td>
-              <td><input type="radio" name="feedback" value="1"></td>
-              <td><input type="radio" name="feedback" value="2"></td>
-              <td><input type="radio" name="feedback" value="3"></td>
-              <td><input type="radio" name="feedback" value="4"></td>
-              <td><input type="radio" name="feedback" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Motivación -->
-            <tr>
-              <td><b>Motivación</b><br><span class="small">Interés y conexión contextual.</span></td>
-              <td><input type="radio" name="motivacion" value="1"></td>
-              <td><input type="radio" name="motivacion" value="2"></td>
-              <td><input type="radio" name="motivacion" value="3"></td>
-              <td><input type="radio" name="motivacion" value="4"></td>
-              <td><input type="radio" name="motivacion" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Diseño -->
-            <tr>
-              <td><b>Diseño y presentación</b><br><span class="small">Organización visual y calidad multimedia.</span></td>
-              <td><input type="radio" name="diseno" value="1"></td>
-              <td><input type="radio" name="diseno" value="2"></td>
-              <td><input type="radio" name="diseno" value="3"></td>
-              <td><input type="radio" name="diseno" value="4"></td>
-              <td><input type="radio" name="diseno" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Usabilidad -->
-            <tr>
-              <td><b>Usabilidad</b><br><span class="small">Facilidad de navegación e instrucciones.</span></td>
-              <td><input type="radio" name="usabilidad" value="1"></td>
-              <td><input type="radio" name="usabilidad" value="2"></td>
-              <td><input type="radio" name="usabilidad" value="3"></td>
-              <td><input type="radio" name="usabilidad" value="4"></td>
-              <td><input type="radio" name="usabilidad" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Accesibilidad -->
-            <tr>
-              <td><b>Accesibilidad</b><br><span class="small">Subtítulos, contraste, estructura.</span></td>
-              <td><input type="radio" name="accesibilidad" value="1"></td>
-              <td><input type="radio" name="accesibilidad" value="2"></td>
-              <td><input type="radio" name="accesibilidad" value="3"></td>
-              <td><input type="radio" name="accesibilidad" value="4"></td>
-              <td><input type="radio" name="accesibilidad" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Reusabilidad -->
-            <tr>
-              <td><b>Reusabilidad e interoperabilidad</b></td>
-              <td><input type="radio" name="reusabilidad" value="1"></td>
-              <td><input type="radio" name="reusabilidad" value="2"></td>
-              <td><input type="radio" name="reusabilidad" value="3"></td>
-              <td><input type="radio" name="reusabilidad" value="4"></td>
-              <td><input type="radio" name="reusabilidad" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-            <!-- Estándares -->
-            <tr>
-              <td><b>Estándares y metadatos</b></td>
-              <td><input type="radio" name="estandares" value="1"></td>
-              <td><input type="radio" name="estandares" value="2"></td>
-              <td><input type="radio" name="estandares" value="3"></td>
-              <td><input type="radio" name="estandares" value="4"></td>
-              <td><input type="radio" name="estandares" value="5"></td>
-              <td><textarea rows="2" style="width:100%"></textarea></td>
-            </tr>
-          
-          </table>
-          </div>
-          
-          <br>
-          
-          <label><b>Promedio final:</b></label>
-          <input type="text" style="width:80px">
-          
+            <div style="overflow-x:auto">
+              <table class="table">
+                <!-- ✅ Corrección: thead/tbody -->
+                <thead>
+                  <tr>
+                    <th style="min-width:200px">Criterio</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th style="min-width:250px">Evidencias / Observaciones</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td><b>Calidad del contenido</b><br><span class="small">Rigor, claridad y pertinencia.</span></td>
+                    <td><input type="radio" name="contenido" value="1"></td>
+                    <td><input type="radio" name="contenido" value="2"></td>
+                    <td><input type="radio" name="contenido" value="3"></td>
+                    <td><input type="radio" name="contenido" value="4"></td>
+                    <td><input type="radio" name="contenido" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Alineación con objetivos</b><br><span class="small">Coherencia objetivos–actividades–evaluación.</span></td>
+                    <td><input type="radio" name="alineacion" value="1"></td>
+                    <td><input type="radio" name="alineacion" value="2"></td>
+                    <td><input type="radio" name="alineacion" value="3"></td>
+                    <td><input type="radio" name="alineacion" value="4"></td>
+                    <td><input type="radio" name="alineacion" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Feedback e interactividad</b><br><span class="small">Retroalimentación formativa y participación.</span></td>
+                    <td><input type="radio" name="feedback" value="1"></td>
+                    <td><input type="radio" name="feedback" value="2"></td>
+                    <td><input type="radio" name="feedback" value="3"></td>
+                    <td><input type="radio" name="feedback" value="4"></td>
+                    <td><input type="radio" name="feedback" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Motivación</b><br><span class="small">Interés y conexión contextual.</span></td>
+                    <td><input type="radio" name="motivacion" value="1"></td>
+                    <td><input type="radio" name="motivacion" value="2"></td>
+                    <td><input type="radio" name="motivacion" value="3"></td>
+                    <td><input type="radio" name="motivacion" value="4"></td>
+                    <td><input type="radio" name="motivacion" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Diseño y presentación</b><br><span class="small">Organización visual y calidad multimedia.</span></td>
+                    <td><input type="radio" name="diseno" value="1"></td>
+                    <td><input type="radio" name="diseno" value="2"></td>
+                    <td><input type="radio" name="diseno" value="3"></td>
+                    <td><input type="radio" name="diseno" value="4"></td>
+                    <td><input type="radio" name="diseno" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Usabilidad</b><br><span class="small">Facilidad de navegación e instrucciones.</span></td>
+                    <td><input type="radio" name="usabilidad" value="1"></td>
+                    <td><input type="radio" name="usabilidad" value="2"></td>
+                    <td><input type="radio" name="usabilidad" value="3"></td>
+                    <td><input type="radio" name="usabilidad" value="4"></td>
+                    <td><input type="radio" name="usabilidad" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Accesibilidad</b><br><span class="small">Subtítulos, contraste, estructura.</span></td>
+                    <td><input type="radio" name="accesibilidad" value="1"></td>
+                    <td><input type="radio" name="accesibilidad" value="2"></td>
+                    <td><input type="radio" name="accesibilidad" value="3"></td>
+                    <td><input type="radio" name="accesibilidad" value="4"></td>
+                    <td><input type="radio" name="accesibilidad" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Reusabilidad e interoperabilidad</b></td>
+                    <td><input type="radio" name="reusabilidad" value="1"></td>
+                    <td><input type="radio" name="reusabilidad" value="2"></td>
+                    <td><input type="radio" name="reusabilidad" value="3"></td>
+                    <td><input type="radio" name="reusabilidad" value="4"></td>
+                    <td><input type="radio" name="reusabilidad" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td><b>Estándares y metadatos</b></td>
+                    <td><input type="radio" name="estandares" value="1"></td>
+                    <td><input type="radio" name="estandares" value="2"></td>
+                    <td><input type="radio" name="estandares" value="3"></td>
+                    <td><input type="radio" name="estandares" value="4"></td>
+                    <td><input type="radio" name="estandares" value="5"></td>
+                    <td><textarea rows="2" style="width:100%"></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <br>
+
+            <label><b>Promedio final:</b></label>
+            <input type="text" style="width:80px">
+
           </form>
 
           <br>
 
           <div class="callout">
-          <b>Interpretación:</b><br>
-          1–2 → Prioridad alta de rediseño<br>
-          3 → Mejora focalizada<br>
-          4–5 → Recurso adecuado / optimizable
+            <b>Interpretación:</b><br>
+            1–2 → Prioridad alta de rediseño<br>
+            3 → Mejora focalizada<br>
+            4–5 → Recurso adecuado / optimizable
           </div>
 
-        <!-- =========================================================
-             MATRIZ DE REDISEÑO
-             ========================================================= -->
-        <h2 class="h2">Matriz de rediseño</h2>
+          <!-- =========================================================
+               MATRIZ DE REDISEÑO
+               ========================================================= -->
+          <h2 class="h2">Matriz de rediseño</h2>
 
-        <!-- Si quieres hacerla responsive en móvil, envuélvela así:
-             <div style="overflow-x:auto"> ... </div>
-        -->
-        <div style="overflow-x:auto">
-          <table class="table">
-            <tr>
-              <th>Ámbito</th><th>Hallazgo</th><th>Evidencia</th><th>Impacto</th><th>Solución</th><th>Prioridad</th>
-            </tr>
+          <div style="overflow-x:auto">
+            <table class="table">
+              <!-- ✅ Corrección: thead/tbody -->
+              <thead>
+                <tr>
+                  <th>Ámbito</th>
+                  <th>Hallazgo</th>
+                  <th>Evidencia</th>
+                  <th>Impacto</th>
+                  <th>Solución</th>
+                  <th>Prioridad</th>
+                </tr>
+              </thead>
 
-            <tr>
-              <td><b>Evaluación formativa</b></td>
-              <td>Baja retroalimentación e interactividad en ambos RED.</td>
-              <td>Feedback/adaptabilidad bajo: RED1=2/5; RED2=1/5 (COdA/LORI).</td>
-              <td>Menor autorregulación del aprendizaje; riesgo de consumo informativo sin desempeño observable.</td>
-              <td>
-                Diseñar un <b>paquete didáctico</b> con:
-                <ul>
-                  <li>Cuestionarios diagnóstico/cierre con feedback automático (LMS/Forms).</li>
-                  <li>Foro con rúbrica de argumentación (evidencia normativa, contraargumento, postura ética).</li>
-                  <li>Estudio de caso situado en Colombia + producto escrito breve evaluable.</li>
-                </ul>
-              </td>
-              <td><span class="badge">Alta</span></td>
-            </tr>
+              <tbody>
+                <tr>
+                  <td><b>Evaluación formativa</b></td>
+                  <td>Baja retroalimentación e interactividad en ambos RED.</td>
+                  <td>Feedback/adaptabilidad bajo: RED1=2/5; RED2=1/5 (COdA/LORI).</td>
+                  <td>Menor autorregulación del aprendizaje; riesgo de consumo informativo sin desempeño observable.</td>
+                  <td>
+                    Diseñar un <b>paquete didáctico</b> con:
+                    <ul>
+                      <li>Cuestionarios diagnóstico/cierre con feedback automático (LMS/Forms).</li>
+                      <li>Foro con rúbrica de argumentación (evidencia normativa, contraargumento, postura ética).</li>
+                      <li>Estudio de caso situado en Colombia + producto escrito breve evaluable.</li>
+                    </ul>
+                  </td>
+                  <td><span class="badge">Alta</span></td>
+                </tr>
 
-            <tr>
-              <td><b>Alineación didáctica</b></td>
-              <td>Objetivos no operacionalizados dentro del recurso (especialmente RED2).</td>
-              <td>Objetivos: RED2=3/5 (COdA/LORI); divulgativo sin metas formativas explícitas.</td>
-              <td>Se dificulta planeación y evaluación; se reduce trazabilidad de resultados de aprendizaje.</td>
-              <td>
-                Construir una <b>secuencia didáctica</b> para Licenciatura: resultados de aprendizaje medibles, actividades previas/durante/post,
-                criterios de evaluación y rúbrica alineada a competencias ciudadanas.
-              </td>
-              <td><span class="badge">Alta</span></td>
-            </tr>
+                <tr>
+                  <td><b>Alineación didáctica</b></td>
+                  <td>Objetivos no operacionalizados dentro del recurso (especialmente RED2).</td>
+                  <td>Objetivos: RED2=3/5 (COdA/LORI); divulgativo sin metas formativas explícitas.</td>
+                  <td>Se dificulta planeación y evaluación; se reduce trazabilidad de resultados de aprendizaje.</td>
+                  <td>
+                    Construir una <b>secuencia didáctica</b> para Licenciatura: resultados de aprendizaje medibles, actividades previas/durante/post,
+                    criterios de evaluación y rúbrica alineada a competencias ciudadanas.
+                  </td>
+                  <td><span class="badge">Alta</span></td>
+                </tr>
 
-            <tr>
-              <td><b>Accesibilidad</b></td>
-              <td>Accesibilidad moderada (verificación formal pendiente).</td>
-              <td>Accesibilidad=3/5 en ambos RED.</td>
-              <td>Posibles barreras de acceso e inclusión; limitación para diversidad funcional y contextos de conectividad.</td>
-              <td>
-                <ul>
-                  <li>RED1: verificar etiquetado del PDF, orden lógico y alternativas textuales.</li>
-                  <li>RED2: asegurar subtítulos; si no hay, elaborar transcripción y guía textual.</li>
-                </ul>
-              </td>
-              <td><span class="badge">Alta</span></td>
-            </tr>
+                <tr>
+                  <td><b>Accesibilidad</b></td>
+                  <td>Accesibilidad moderada (verificación formal pendiente).</td>
+                  <td>Accesibilidad=3/5 en ambos RED.</td>
+                  <td>Posibles barreras de acceso e inclusión; limitación para diversidad funcional y contextos de conectividad.</td>
+                  <td>
+                    <ul>
+                      <li>RED1: verificar etiquetado del PDF, orden lógico y alternativas textuales.</li>
+                      <li>RED2: asegurar subtítulos; si no hay, elaborar transcripción y guía textual.</li>
+                    </ul>
+                  </td>
+                  <td><span class="badge">Alta</span></td>
+                </tr>
 
-            <tr>
-              <td><b>Usabilidad</b></td>
-              <td>Usabilidad alta, pero requiere señalización instruccional.</td>
-              <td>Usabilidad=4/5 en ambos RED.</td>
-              <td>Sin ruta, aumenta carga cognitiva y se diluye el propósito de aprendizaje.</td>
-              <td>
-                Incorporar andamiajes: mapa de ruta (10–15–30 min), preguntas guía por secciones y checklist de autoevaluación.
-              </td>
-              <td><span class="badge">Media</span></td>
-            </tr>
+                <tr>
+                  <td><b>Usabilidad</b></td>
+                  <td>Usabilidad alta, pero requiere señalización instruccional.</td>
+                  <td>Usabilidad=4/5 en ambos RED.</td>
+                  <td>Sin ruta, aumenta carga cognitiva y se diluye el propósito de aprendizaje.</td>
+                  <td>
+                    Incorporar andamiajes: mapa de ruta (10–15–30 min), preguntas guía por secciones y checklist de autoevaluación.
+                  </td>
+                  <td><span class="badge">Media</span></td>
+                </tr>
 
-            <tr>
-              <td><b>Estándares/Reusabilidad</b></td>
-              <td>Estándares y metadatos moderados; alta reusabilidad mediada.</td>
-              <td>Estándares=3/5; Reusabilidad: RED1=4/5, RED2=3/5.</td>
-              <td>Interoperabilidad limitada y menor trazabilidad en LMS.</td>
-              <td>
-                Elaborar ficha de metadatos (autoría, nivel, requisitos, licencia, palabras clave) y paquetizar guía+actividades+rúnbrica para LMS.
-              </td>
-              <td><span class="badge">Media</span></td>
-            </tr>
-          </table>
-        </div>
+                <tr>
+                  <td><b>Estándares/Reusabilidad</b></td>
+                  <td>Estándares y metadatos moderados; alta reusabilidad mediada.</td>
+                  <td>Estándares=3/5; Reusabilidad: RED1=4/5, RED2=3/5.</td>
+                  <td>Interoperabilidad limitada y menor trazabilidad en LMS.</td>
+                  <td>
+                    Elaborar ficha de metadatos (autoría, nivel, requisitos, licencia, palabras clave) y paquetizar guía+actividades+rúnbrica para LMS.
+                  </td>
+                  <td><span class="badge">Media</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <!-- Referencias bibliográficas -->
           <h3 class="h3">Referencias bibliográficas</h3>
           <ul>
             <li>Bertossi, V., Romero, L., & Gutiérrez, M. (2022). Revisión sistemática de instrumentos de evaluación de calidad de objetos de aprendizaje. Revista Ibérica de Sistemas e Tecnologias de Información, (46), 34-53. https://doi.org/10.17013/risti.46.34-53</li>
-            <li>Cova, Ángela; Arrieta, Xiomara; Aular de Duran, Judith. <i>Revisión de modelos para evaluación de software educativos Télématique, vol. 7, núm. 1, 2008, pp. 94-116 Universidad Privada Dr. Rafael Belloso Chacín Zulia, Venezuela. http://www.redalyc.org/articulo.oa?id=78470106</li>
+            <li>Cova, Ángela; Arrieta, Xiomara; Aular de Duran, Judith. <i>Revisión de modelos para evaluación de software educativos Télématique, vol. 7, núm. 1, 2008, pp. 94-116 Universidad Privada Dr. Rafael Belloso Chacín Zulia, Venezuela. http://www.redalyc.org/articulo.oa?id=78470106</i></li>
             <li>Kucuk, L., & Ierache, J. S. (2020). Aplicación de rúbrica COdA para evaluación de calidad objetos de aprendizajes. In XXII Workshop de Investigadores en Ciencias de la Computación (WICC 2020, El Calafate, Santa Cruz). https://sedici.unlp.edu.ar/handle/10915/103877</li>
-            <li>Rubio, M. J. (2003). <i>Enfoques y modelos de evaluación del e-learning. RELIEVE-Revista Electrónica de Investigación y Evaluación Educativa, 9(2). https://doi.org/10.7203/relieve.9.2.4332</li>
+            <li>Rubio, M. J. (2003). <i>Enfoques y modelos de evaluación del e-learning. RELIEVE-Revista Electrónica de Investigación y Evaluación Educativa, 9(2). https://doi.org/10.7203/relieve.9.2.4332</i></li>
           </ul>
         </section>
 
@@ -449,6 +481,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
-
