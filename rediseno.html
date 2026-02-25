@@ -329,182 +329,209 @@
             </div>
 
             <div style="overflow-x:auto">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="min-width:230px">Criterio</th>
-                    <th class="radio-cell">1</th>
-                    <th class="radio-cell">2</th>
-                    <th class="radio-cell">3</th>
-                    <th class="radio-cell">4</th>
-                    <th class="radio-cell">5</th>
-                    <th style="min-width:280px">Evidencias / Observaciones</th>
-                  </tr>
-                </thead>
+  <table class="table rubrica">
+    <thead>
+      <tr>
+        <th class="crit">Criterio</th>
+        <th class="num">1</th>
+        <th class="num">2</th>
+        <th class="num">3</th>
+        <th class="num">4</th>
+        <th class="num">5</th>
+        <th class="obs">Evidencias / Observaciones</th>
+      </tr>
+    </thead>
 
-                <tbody>
-                  <!-- Cada fila usa fieldset/legend para accesibilidad -->
-                  <tr>
-                    <td>
-                      <b>Calidad del contenido</b><br><span class="small">Rigor, claridad y pertinencia.</span>
-                    </td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Calidad del contenido</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="contenido" value="1"> <span class="sr-only">1</span></label>
-                          <label><input type="radio" name="contenido" value="2"> <span class="sr-only">2</span></label>
-                          <label><input type="radio" name="contenido" value="3"> <span class="sr-only">3</span></label>
-                          <label><input type="radio" name="contenido" value="4"> <span class="sr-only">4</span></label>
-                          <label><input type="radio" name="contenido" value="5"> <span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-contenido">Evidencias/observaciones</label><textarea id="obs-contenido" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+    <tbody>
+      <!-- 1) Calidad del contenido -->
+      <tr>
+        <td class="crit">
+          <b>Calidad del contenido</b><br>
+          <span class="small">Rigor, claridad y pertinencia.</span>
+          <fieldset class="sr-only">
+            <legend>Calidad del contenido</legend>
+          </fieldset>
+        </td>
 
-                  <tr>
-                    <td>
-                      <b>Alineación con objetivos</b><br><span class="small">Coherencia objetivos–actividades–evaluación.</span>
-                    </td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Alineación con objetivos</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="alineacion" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="alineacion" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="alineacion" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="alineacion" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="alineacion" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-alineacion">Evidencias/observaciones</label><textarea id="obs-alineacion" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+        <td class="num">
+          <label class="sr-only" for="contenido-1">1</label>
+          <input id="contenido-1" type="radio" name="contenido" value="1">
+        </td>
+        <td class="num">
+          <label class="sr-only" for="contenido-2">2</label>
+          <input id="contenido-2" type="radio" name="contenido" value="2">
+        </td>
+        <td class="num">
+          <label class="sr-only" for="contenido-3">3</label>
+          <input id="contenido-3" type="radio" name="contenido" value="3">
+        </td>
+        <td class="num">
+          <label class="sr-only" for="contenido-4">4</label>
+          <input id="contenido-4" type="radio" name="contenido" value="4">
+        </td>
+        <td class="num">
+          <label class="sr-only" for="contenido-5">5</label>
+          <input id="contenido-5" type="radio" name="contenido" value="5">
+        </td>
 
-                  <tr>
-                    <td>
-                      <b>Feedback e interactividad</b><br><span class="small">Retroalimentación formativa y participación.</span>
-                    </td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Feedback e interactividad</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="feedback" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="feedback" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="feedback" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="feedback" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="feedback" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-feedback">Evidencias/observaciones</label><textarea id="obs-feedback" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+        <td class="obs">
+          <label class="sr-only" for="obs-contenido">Evidencias/Observaciones</label>
+          <textarea id="obs-contenido" rows="2" style="width:100%"></textarea>
+        </td>
+      </tr>
 
-                  <tr>
-                    <td><b>Motivación</b><br><span class="small">Interés y conexión contextual.</span></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Motivación</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="motivacion" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="motivacion" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="motivacion" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="motivacion" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="motivacion" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-motivacion">Evidencias/observaciones</label><textarea id="obs-motivacion" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+      <!-- 2) Alineación con objetivos -->
+      <tr>
+        <td class="crit">
+          <b>Alineación con objetivos</b><br>
+          <span class="small">Coherencia objetivos–actividades–evaluación.</span>
+          <fieldset class="sr-only">
+            <legend>Alineación con objetivos</legend>
+          </fieldset>
+        </td>
 
-                  <tr>
-                    <td><b>Diseño y presentación</b><br><span class="small">Organización visual y calidad multimedia.</span></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Diseño y presentación</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="diseno" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="diseno" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="diseno" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="diseno" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="diseno" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-diseno">Evidencias/observaciones</label><textarea id="obs-diseno" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+        <td class="num"><label class="sr-only" for="alineacion-1">1</label><input id="alineacion-1" type="radio" name="alineacion" value="1"></td>
+        <td class="num"><label class="sr-only" for="alineacion-2">2</label><input id="alineacion-2" type="radio" name="alineacion" value="2"></td>
+        <td class="num"><label class="sr-only" for="alineacion-3">3</label><input id="alineacion-3" type="radio" name="alineacion" value="3"></td>
+        <td class="num"><label class="sr-only" for="alineacion-4">4</label><input id="alineacion-4" type="radio" name="alineacion" value="4"></td>
+        <td class="num"><label class="sr-only" for="alineacion-5">5</label><input id="alineacion-5" type="radio" name="alineacion" value="5"></td>
 
-                  <tr>
-                    <td><b>Usabilidad</b><br><span class="small">Facilidad de navegación e instrucciones.</span></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Usabilidad</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="usabilidad" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="usabilidad" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="usabilidad" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="usabilidad" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="usabilidad" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-usabilidad">Evidencias/observaciones</label><textarea id="obs-usabilidad" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+        <td class="obs"><label class="sr-only" for="obs-alineacion">Evidencias/Observaciones</label><textarea id="obs-alineacion" rows="2" style="width:100%"></textarea></td>
+      </tr>
 
-                  <tr>
-                    <td><b>Accesibilidad</b><br><span class="small">Subtítulos, contraste, estructura.</span></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Accesibilidad</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="accesibilidad" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="accesibilidad" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="accesibilidad" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="accesibilidad" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="accesibilidad" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-accesibilidad">Evidencias/observaciones</label><textarea id="obs-accesibilidad" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+      <!-- 3) Feedback e interactividad -->
+      <tr>
+        <td class="crit">
+          <b>Feedback e interactividad</b><br>
+          <span class="small">Retroalimentación formativa y participación.</span>
+          <fieldset class="sr-only">
+            <legend>Feedback e interactividad</legend>
+          </fieldset>
+        </td>
 
-                  <tr>
-                    <td><b>Reusabilidad e interoperabilidad</b></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Reusabilidad e interoperabilidad</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="reusabilidad" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="reusabilidad" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="reusabilidad" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="reusabilidad" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="reusabilidad" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-reusabilidad">Evidencias/observaciones</label><textarea id="obs-reusabilidad" rows="2" style="width:100%"></textarea></td>
-                  </tr>
+        <td class="num"><label class="sr-only" for="feedback-1">1</label><input id="feedback-1" type="radio" name="feedback" value="1"></td>
+        <td class="num"><label class="sr-only" for="feedback-2">2</label><input id="feedback-2" type="radio" name="feedback" value="2"></td>
+        <td class="num"><label class="sr-only" for="feedback-3">3</label><input id="feedback-3" type="radio" name="feedback" value="3"></td>
+        <td class="num"><label class="sr-only" for="feedback-4">4</label><input id="feedback-4" type="radio" name="feedback" value="4"></td>
+        <td class="num"><label class="sr-only" for="feedback-5">5</label><input id="feedback-5" type="radio" name="feedback" value="5"></td>
 
-                  <tr>
-                    <td><b>Estándares y metadatos</b></td>
-                    <td colspan="5">
-                      <fieldset>
-                        <legend class="sr-only">Estándares y metadatos</legend>
-                        <div class="radio-group">
-                          <label><input type="radio" name="estandares" value="1"><span class="sr-only">1</span></label>
-                          <label><input type="radio" name="estandares" value="2"><span class="sr-only">2</span></label>
-                          <label><input type="radio" name="estandares" value="3"><span class="sr-only">3</span></label>
-                          <label><input type="radio" name="estandares" value="4"><span class="sr-only">4</span></label>
-                          <label><input type="radio" name="estandares" value="5"><span class="sr-only">5</span></label>
-                        </div>
-                      </fieldset>
-                    </td>
-                    <td><label class="sr-only" for="obs-estandares">Evidencias/observaciones</label><textarea id="obs-estandares" rows="2" style="width:100%"></textarea></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+        <td class="obs"><label class="sr-only" for="obs-feedback">Evidencias/Observaciones</label><textarea id="obs-feedback" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 4) Motivación -->
+      <tr>
+        <td class="crit">
+          <b>Motivación</b><br>
+          <span class="small">Interés y conexión contextual.</span>
+          <fieldset class="sr-only">
+            <legend>Motivación</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="motivacion-1">1</label><input id="motivacion-1" type="radio" name="motivacion" value="1"></td>
+        <td class="num"><label class="sr-only" for="motivacion-2">2</label><input id="motivacion-2" type="radio" name="motivacion" value="2"></td>
+        <td class="num"><label class="sr-only" for="motivacion-3">3</label><input id="motivacion-3" type="radio" name="motivacion" value="3"></td>
+        <td class="num"><label class="sr-only" for="motivacion-4">4</label><input id="motivacion-4" type="radio" name="motivacion" value="4"></td>
+        <td class="num"><label class="sr-only" for="motivacion-5">5</label><input id="motivacion-5" type="radio" name="motivacion" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-motivacion">Evidencias/Observaciones</label><textarea id="obs-motivacion" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 5) Diseño y presentación -->
+      <tr>
+        <td class="crit">
+          <b>Diseño y presentación</b><br>
+          <span class="small">Organización visual y calidad multimedia.</span>
+          <fieldset class="sr-only">
+            <legend>Diseño y presentación</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="diseno-1">1</label><input id="diseno-1" type="radio" name="diseno" value="1"></td>
+        <td class="num"><label class="sr-only" for="diseno-2">2</label><input id="diseno-2" type="radio" name="diseno" value="2"></td>
+        <td class="num"><label class="sr-only" for="diseno-3">3</label><input id="diseno-3" type="radio" name="diseno" value="3"></td>
+        <td class="num"><label class="sr-only" for="diseno-4">4</label><input id="diseno-4" type="radio" name="diseno" value="4"></td>
+        <td class="num"><label class="sr-only" for="diseno-5">5</label><input id="diseno-5" type="radio" name="diseno" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-diseno">Evidencias/Observaciones</label><textarea id="obs-diseno" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 6) Usabilidad -->
+      <tr>
+        <td class="crit">
+          <b>Usabilidad</b><br>
+          <span class="small">Facilidad de navegación e instrucciones.</span>
+          <fieldset class="sr-only">
+            <legend>Usabilidad</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="usabilidad-1">1</label><input id="usabilidad-1" type="radio" name="usabilidad" value="1"></td>
+        <td class="num"><label class="sr-only" for="usabilidad-2">2</label><input id="usabilidad-2" type="radio" name="usabilidad" value="2"></td>
+        <td class="num"><label class="sr-only" for="usabilidad-3">3</label><input id="usabilidad-3" type="radio" name="usabilidad" value="3"></td>
+        <td class="num"><label class="sr-only" for="usabilidad-4">4</label><input id="usabilidad-4" type="radio" name="usabilidad" value="4"></td>
+        <td class="num"><label class="sr-only" for="usabilidad-5">5</label><input id="usabilidad-5" type="radio" name="usabilidad" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-usabilidad">Evidencias/Observaciones</label><textarea id="obs-usabilidad" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 7) Accesibilidad -->
+      <tr>
+        <td class="crit">
+          <b>Accesibilidad</b><br>
+          <span class="small">Subtítulos, contraste, estructura.</span>
+          <fieldset class="sr-only">
+            <legend>Accesibilidad</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="accesibilidad-1">1</label><input id="accesibilidad-1" type="radio" name="accesibilidad" value="1"></td>
+        <td class="num"><label class="sr-only" for="accesibilidad-2">2</label><input id="accesibilidad-2" type="radio" name="accesibilidad" value="2"></td>
+        <td class="num"><label class="sr-only" for="accesibilidad-3">3</label><input id="accesibilidad-3" type="radio" name="accesibilidad" value="3"></td>
+        <td class="num"><label class="sr-only" for="accesibilidad-4">4</label><input id="accesibilidad-4" type="radio" name="accesibilidad" value="4"></td>
+        <td class="num"><label class="sr-only" for="accesibilidad-5">5</label><input id="accesibilidad-5" type="radio" name="accesibilidad" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-accesibilidad">Evidencias/Observaciones</label><textarea id="obs-accesibilidad" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 8) Reusabilidad e interoperabilidad -->
+      <tr>
+        <td class="crit">
+          <b>Reusabilidad e interoperabilidad</b>
+          <fieldset class="sr-only">
+            <legend>Reusabilidad e interoperabilidad</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="reusabilidad-1">1</label><input id="reusabilidad-1" type="radio" name="reusabilidad" value="1"></td>
+        <td class="num"><label class="sr-only" for="reusabilidad-2">2</label><input id="reusabilidad-2" type="radio" name="reusabilidad" value="2"></td>
+        <td class="num"><label class="sr-only" for="reusabilidad-3">3</label><input id="reusabilidad-3" type="radio" name="reusabilidad" value="3"></td>
+        <td class="num"><label class="sr-only" for="reusabilidad-4">4</label><input id="reusabilidad-4" type="radio" name="reusabilidad" value="4"></td>
+        <td class="num"><label class="sr-only" for="reusabilidad-5">5</label><input id="reusabilidad-5" type="radio" name="reusabilidad" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-reusabilidad">Evidencias/Observaciones</label><textarea id="obs-reusabilidad" rows="2" style="width:100%"></textarea></td>
+      </tr>
+
+      <!-- 9) Estándares y metadatos -->
+      <tr>
+        <td class="crit">
+          <b>Estándares y metadatos</b>
+          <fieldset class="sr-only">
+            <legend>Estándares y metadatos</legend>
+          </fieldset>
+        </td>
+
+        <td class="num"><label class="sr-only" for="estandares-1">1</label><input id="estandares-1" type="radio" name="estandares" value="1"></td>
+        <td class="num"><label class="sr-only" for="estandares-2">2</label><input id="estandares-2" type="radio" name="estandares" value="2"></td>
+        <td class="num"><label class="sr-only" for="estandares-3">3</label><input id="estandares-3" type="radio" name="estandares" value="3"></td>
+        <td class="num"><label class="sr-only" for="estandares-4">4</label><input id="estandares-4" type="radio" name="estandares" value="4"></td>
+        <td class="num"><label class="sr-only" for="estandares-5">5</label><input id="estandares-5" type="radio" name="estandares" value="5"></td>
+
+        <td class="obs"><label class="sr-only" for="obs-estandares">Evidencias/Observaciones</label><textarea id="obs-estandares" rows="2" style="width:100%"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
             <br>
 
@@ -611,7 +638,7 @@
         </section>
 
         <div class="callout">
-          <b>Resultado esperado:</b> un paquete didáctico reutilizable con actividades y retroalimentación, accesibilidad reforzada y trazabilidad (metadatos y evaluación), para integración sistemática en Licenciatura en Ciencias Sociales.
+          <b>Resultado esperado:</b> un paquete didáctico reutilizable con actividades y retroalimentación, accesibilidad reforzada y trazabilidad (metadatos y evaluación), para integración sistemática la asignatura de Construcción de la Ciudadanía en Licenciatura en Ciencias Sociales.
         </div>
 
       </article>
