@@ -157,3 +157,22 @@ button:hover,.button:hover,[role="button"]:hover{background:var(--udec-green-dar
 }
 
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.card:hover{transform:none}}
+
+/* Pie de página institucional — Universidad de Cartagena */
+.footer{padding:0;background:linear-gradient(110deg,var(--udec-green-dark),var(--udec-green));}
+.footer-main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:28px;align-items:center;padding:24px 0;color:#fff}
+.footer-brand{display:flex;align-items:center;gap:16px;min-width:0}
+.footer-brand img{width:150px;height:74px;object-fit:contain;object-position:left center;background:#fff;border-radius:10px;padding:5px}
+.footer-brand div,.footer-project{display:flex;flex-direction:column;gap:3px}
+.footer-brand strong,.footer-project strong{font-size:15px;line-height:1.35}
+.footer-brand span,.footer-project span{color:rgba(255,255,255,.82);font-size:12.5px;line-height:1.45}
+.footer-project{padding-left:25px;border-left:1px solid rgba(255,255,255,.28)}
+.footer-bottom{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.78);font-size:11.5px}
+
+@media (max-width:720px){
+  .footer-main{grid-template-columns:1fr;gap:18px;padding:20px 0}
+  .footer-brand{align-items:flex-start}
+  .footer-brand img{width:125px;height:64px}
+  .footer-project{padding-left:0;padding-top:15px;border-left:0;border-top:1px solid rgba(255,255,255,.22)}
+  .footer-bottom{flex-direction:column;gap:4px}
+}
