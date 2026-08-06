@@ -6,6 +6,64 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Metodología MIERED | Universidad de Cartagena</title>
 <link href="assets/css/styles.css" rel="stylesheet"/>
+
+<style>
+/* Lista de verificación: casillas y texto centrados */
+#verificacion .checklist-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1rem;
+}
+
+#verificacion .checklist-grid label{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:.75rem;
+    min-height:110px;
+    padding:1rem 1.25rem;
+    border:1px solid #d9d9d9;
+    border-radius:12px;
+    background:#fff;
+    text-align:center;
+    line-height:1.5;
+    cursor:pointer;
+    transition:border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+#verificacion .checklist-grid input[type="checkbox"]{
+    display:block;
+    flex:0 0 auto;
+    width:20px;
+    height:20px;
+    margin:0;
+    accent-color:#174c37;
+    cursor:pointer;
+}
+
+#verificacion .checklist-grid label:has(input:checked){
+    background:#eef7f2;
+    border-color:#174c37;
+    box-shadow:0 0 0 3px rgba(23,76,55,.12);
+}
+
+#verificacion .checklist-grid label:focus-within{
+    outline:3px solid rgba(198,155,45,.45);
+    outline-offset:2px;
+}
+
+@media (max-width:768px){
+    #verificacion .checklist-grid{
+        grid-template-columns:1fr;
+    }
+
+    #verificacion .checklist-grid label{
+        min-height:96px;
+    }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="container"><div aria-label="Identidad institucional de la Universidad de Cartagena y la Maestría en Recursos Digitales Aplicados a la Educación" class="brand"><img alt="Universidad de Cartagena, fundada en 1827" class="brand-university" src="assets/img/logo-udc.png"/><span aria-hidden="true" class="brand-divider"></span><img alt="Maestría en Recursos Digitales Aplicados a la Educación" class="brand-program" src="assets/img/logo-maestria.png"/></div></div></header>
@@ -74,16 +132,16 @@
 <section class="card" id="verificacion">
 <div class="section-heading"><span class="eyebrow">Control de calidad</span><h2 class="h2">Lista de verificación antes de cerrar la evaluación</h2></div>
 <div class="checklist-grid">
-<label><input type="checkbox"/> Se registraron propósito, alcance y contexto del RED.</label>
-<label><input type="checkbox"/> Todas las dimensiones tienen criterios aplicables y justificados.</label>
-<label><input type="checkbox"/> Cada puntaje cuenta con una evidencia observable.</label>
-<label><input type="checkbox"/> Se aplicó de manera consistente la escala de 1 a 5.</label>
-<label><input type="checkbox"/> Las ponderaciones suman 100%.</label>
-<label><input type="checkbox"/> Se calculó el resultado por dimensión y el resultado global.</label>
-<label><input type="checkbox"/> Se identificaron fortalezas, brechas y criterios críticos.</label>
-<label><input type="checkbox"/> Las acciones de mejora incluyen prioridad y evidencia esperada.</label>
-<label><input type="checkbox"/> Se revisó la accesibilidad y la visualización en diferentes dispositivos.</label>
-<label><input type="checkbox"/> Las conclusiones responden a los resultados obtenidos.</label>
+<label><input type="checkbox"/><span>Se registraron propósito, alcance y contexto del RED.</span></label>
+<label><input type="checkbox"/><span>Todas las dimensiones tienen criterios aplicables y justificados.</span></label>
+<label><input type="checkbox"/><span>Cada puntaje cuenta con una evidencia observable.</span></label>
+<label><input type="checkbox"/><span>Se aplicó de manera consistente la escala de 1 a 5.</span></label>
+<label><input type="checkbox"/><span>Las ponderaciones suman 100%.</span></label>
+<label><input type="checkbox"/><span>Se calculó el resultado por dimensión y el resultado global.</span></label>
+<label><input type="checkbox"/><span>Se identificaron fortalezas, brechas y criterios críticos.</span></label>
+<label><input type="checkbox"/><span>Las acciones de mejora incluyen prioridad y evidencia esperada.</span></label>
+<label><input type="checkbox"/><span>Se revisó la accesibilidad y la visualización en diferentes dispositivos.</span></label>
+<label><input type="checkbox"/><span>Las conclusiones responden a los resultados obtenidos.</span></label>
 </div>
 </section>
 </main>
