@@ -279,3 +279,33 @@ progress{width:100%;height:14px;accent-color:var(--udec-green)}
 @media (max-width:900px){.criterion-row{grid-template-columns:1fr 190px}.criterion-evidence{grid-column:1/-1}}
 @media (max-width:720px){.form-grid,.criterion-row{grid-template-columns:1fr}.criterion-evidence{grid-column:auto}.eval-dimension-head{align-items:flex-start}.evaluator-actions,.report-actions{align-items:stretch;flex-direction:column}.action-group{justify-content:stretch}.action-group .button{flex:1}.nav .wrap{gap:4px}}
 @media print{.topbar,.nav,.footer,.report-actions,.hero .kicker{display:none!important}body{background:#fff}.container{max-width:none}.card{box-shadow:none;break-inside:avoid}.hero{padding-top:0}.grid{padding-bottom:12px}}
+#verificacion .checklist-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1rem;
+}
+
+#verificacion .checklist-grid label{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:.75rem;
+    min-height:110px;
+    padding:1rem 1.25rem;
+    text-align:center;
+}
+
+#verificacion .checklist-grid input[type="checkbox"]{
+    display:block;
+    width:20px;
+    height:20px;
+    margin:0;
+    accent-color:#174c37;
+}
+
+@media (max-width:768px){
+    #verificacion .checklist-grid{
+        grid-template-columns:1fr;
+    }
+}
